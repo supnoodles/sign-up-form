@@ -1,0 +1,39 @@
+* {
+    border: 1px solid red;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF9F6;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.page {
+    height: inherit;
+    display: flex;
+
+}
+
+
+/* LHS */
+
+.left-side {
+    height: inherit;
+    flex: 0 0 25%;
+}
+.left-side img {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RHS */
+.right-side {
+    height:inherit;
+    flex: 0 0 75%;
+}
