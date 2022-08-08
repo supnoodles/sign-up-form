@@ -10,49 +10,48 @@
 </head>
 
 <body>
-    <div class="page">
-        <div class="left-side">
-            <img class="bg-img" src="./media/leaves.avif" height="580" width="387">
+    <div class="content">
+        <div class="lhs">
             <div class="logo-container">
                 <img class="logo-img" src="./media/odin-lined.png" height="508" width="380">
                 <p class="logo-text"> ODIN </p>
             </div>
         </div>
-        <div class="right-side">
-            <div class="info">
+        <div class="rhs">
+            <div class="rhs-text pad-left">
                 <p>This is not a real online service! You know you need something like this in your life to help you
                     realize
                     your deepest dreams.<br>Sign up <i>now</i> to get started</p>
-                <p>You know you want to.</p>
+                <p>You <i>know</i> you want to.</p>
             </div>
 
-            <div class="form-section">
+            <form class="pad-left">
                 <h3> Let's do this! </h3>
-                <form>
-                    <label for="firstName">First Name
-                        <input type="text" id="firstName">
-                    </label>
-                    <label for="lastName">Last Name
-                        <input type="text" id="lastName" name="lastName">
-                    </label>
-                    <label for="email">Email
-                        <input type="email" id="email" name="email">
-                    </label>
-                    <label for="phoneNumber">Phone Number
-                        <input type="text" id="phoneNumber" name="phoneNumber">
-                    </label>
-                    <label for="pw">Password
-                        <input type="text" id="pw" name="password">
-                    </label>
-                    <label for="confirmPass">Confirm Password
-                        <input type="text" id="confirmPass" name="confirmPassword">
-                    </label>
-                </form>
+                <div class="form-container">
+                <label for="firstName">First Name
+                    <input type="text" id="firstName">
+                </label>
+                <label for="lastName">Last Name
+                    <input type="text" id="lastName" name="lastName">
+                </label>
+                <label for="email">Email
+                    <input type="email" id="email" name="email">
+                </label>
+                <label for="phoneNumber">Phone Number
+                    <input type="text" id="phoneNumber" name="phoneNumber">
+                </label>
+                <label for="pw">Password
+                    <input type="text" id="pw" name="password">
+                </label>
+                <label for="confirmPass">Confirm Password
+                    <input type="text" id="confirmPass" name="confirmPassword">
+                </label>
+                <div class="btn">
+                    <btn>Create Account</btn>
+                </div>
             </div>
-            <div class="below-form">
-                <btn class="btn">Create Account</btn>
-                <p class="already-account">Already have an account? <a href="#">Log in</a></p>
-            </div>
+            </form>
+            <p class="already-account pad-left">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
