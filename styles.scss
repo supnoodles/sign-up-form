@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 @font-face {
     font-family: NorseBold;
     src: url("./media/Norse-Bold.otf") format("opentype");
@@ -7,6 +8,7 @@
 // * {
 //     border: 1px solid red;
 // }
+
 
 body {
     margin: 0;
@@ -20,7 +22,7 @@ body {
 .content {
     display: flex;
     flex-direction: row;
-    
+
     height: inherit;
     width: inherit;
 }
@@ -37,7 +39,6 @@ body {
 
     .logo-container {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 1vw;
@@ -56,11 +57,27 @@ body {
         padding: 1vh 0;
     }
 
-    p {
+    .logo-text {
         font-family: NorseBold, sans-serif;
         font-size: 7.5vh;
         color: white;
         margin: 0;
+    }
+
+    .credit {
+        color: white;
+        text-align: center;
+        font-size: 0.7em;
+
+        position: relative;
+        top: 80vh;
+        // bottom: 0;
+        // left: 5vw;
+
+
+        a {
+            color: white;
+        }
     }
 
 }
@@ -77,11 +94,19 @@ body {
         padding-right: 10vw;
     }
 
+    a {
+        text-decoration: none;
+        color:#596D48;
+        font-weight: bold;
+    }
+
 }
 
 .rhs form {
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding-bottom: 3vh;
+
     h3 {
         padding-top: 2vh;
     }
@@ -89,15 +114,53 @@ body {
     label {
         display: flex;
         flex-direction: column;
-    }
-    .form-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+
+        font-size: 0.6em;
+        font-weight: bold;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color:#36454F;
 
     }
+
+    input {
+        width: 200px;;
+    }
+
+    .form-container {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 25vw);
+        grid-gap: 2vh 3vw;
+        justify-items: start;
+    }
+
 }
 
+.btn {
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 500;
+
+    margin-left: 3vw;
+    margin-top: 2vh;
+    width: 20vw;
+    height: 6vh;
+    text-align: center;
+
+    &:hover {
+        background-color: #333f2a;
+        font-weight: 600;
+    }
+}
 
 .pad-left {
     padding-left: 3vw;

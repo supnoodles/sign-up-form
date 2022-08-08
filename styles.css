@@ -43,11 +43,21 @@ body {
   width: auto;
   padding: 1vh 0;
 }
-.lhs p {
+.lhs .logo-text {
   font-family: NorseBold, sans-serif;
   font-size: 7.5vh;
   color: white;
   margin: 0;
+}
+.lhs .credit {
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  position: relative;
+  top: 80vh;
+}
+.lhs .credit a {
+  color: white;
 }
 
 .rhs {
@@ -60,10 +70,16 @@ body {
   margin-bottom: 6vh;
   padding-right: 10vw;
 }
+.rhs a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
 
 .rhs form {
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding-bottom: 3vh;
 }
 .rhs form h3 {
   padding-top: 2vh;
@@ -71,10 +87,41 @@ body {
 .rhs form label {
   display: flex;
   flex-direction: column;
+  font-size: 0.6em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #36454F;
+}
+.rhs form input {
+  width: 200px;
 }
 .rhs form .form-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 25vw);
+  grid-gap: 2vh 3vw;
+  justify-items: start;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 8px;
+  background-color: #596D48;
+  color: white;
+  font-weight: 500;
+  margin-left: 3vw;
+  margin-top: 2vh;
+  width: 20vw;
+  height: 6vh;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #333f2a;
+  font-weight: 600;
 }
 
 .pad-left {
