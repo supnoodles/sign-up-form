@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: NorseBold;
+    src: url("./media/Norse-Bold.otf") format("opentype");
+}
+
+// * {
+//     border: 1px solid red;
+// }
+
+body {
+    margin: 0;
+    background-color: #F9FAFB;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    
+    height: inherit;
+    width: inherit;
+}
+
+// LHS
+.lhs {
+    height: 100vh;
+    width: 30vw;
+
+    background-image: url('./media/leaves.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .logo-container {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+
+        padding: 0;
+        position: relative;
+        top: 20vh;
+        width: inherit;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        height: 11vh;
+        width: auto;
+
+        padding: 1vh 0;
+    }
+
+    p {
+        font-family: NorseBold, sans-serif;
+        font-size: 7.5vh;
+        color: white;
+        margin: 0;
+    }
+
+}
+
+// RHS
+.rhs {
+    width: 70vw;
+    font-family: 'Roboto', sans-serif;
+
+    .rhs-text {
+        font-weight: bold;
+        margin-top: 14vh;
+        margin-bottom: 6vh;
+        padding-right: 10vw;
+    }
+
+}
+
+.rhs form {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    h3 {
+        padding-top: 2vh;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
+
+.pad-left {
+    padding-left: 3vw;
+}
